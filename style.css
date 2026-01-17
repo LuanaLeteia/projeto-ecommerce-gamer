@@ -23,10 +23,14 @@ header {
     );
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    height: 50px;
+    height: 120px;
     width: auto;
-    display: block;
 }
 
 .search {
@@ -79,27 +83,31 @@ header {
     color: #6aa8ff;
 }
 
-nav {
+.categorias {
+    display: flex;
+    justify-content: center;
     background-color: #0b122e;
-    padding: 10px 40px;
+    padding: 12px 40px;
 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-nav ul {
+.lista-categorias {
     display: flex;
-    gap: 25px;
+    gap: 30px;
     list-style: none;
+
+    font-size: 15px;
+    font-weight: 500;
 }
 
-nav a {
+.lista-categorias a {
     color: #cfd6ff;
     text-decoration: none;
-    font-size: 14px;
 }
 
-nav a:hover {
+.lista-categorias a:hover {
     color: #6aa8ff;
 }
 
