@@ -4,22 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Loja do Dev – Consoles, PCs, Acessórios e Ofertas Imperdíveis</title>
 </head>
 
 <body>
     <header>
-        <div class="logo"></div>
+        <div class="logo">
+            <img src="images/logo-contorno.png" alt="imagen-logo">
+        </div>
 
-        <form class="search"></form>
+        <form class="search">
+            <input type="text" placeholder="O que você está procurando">
+            <button type="submit">🔍</button>
+        </form>
 
         <div class="user-actions">
-            <a href="#" class="login">Entrar / Cadastrar</a>
+
+            <a href="#" class="login">
+                <span class="Icon-Registration">👤</span>
+                Minha Conta
+            </a>
+
+            <a href="#" class="favorites">
+                <span class="Icon-favorites">❤️</span>
+                Favoritos
+            </a>
 
             <a href="#" class="cart" aria-label="Carrinho de compras">
-                🛒
-                <span class="cart-count" aria-live="polite">0</span>
+                <span class="cart-count" aria-live="polite">🛒</span>
+                Carrinho de Compras
             </a>
+
         </div>
     </header>
 
