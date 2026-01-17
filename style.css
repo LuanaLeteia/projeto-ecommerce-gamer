@@ -1,21 +1,26 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-}
-
 body {
-    background-color: #000;
-    color: white;
+    min-height: 100vh;
+    background: radial-gradient(
+        circle at top,
+        #1a1f3c 0%,
+        #0b0f1f 45%,
+        #05070f 100%
+    );
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1d1d6c;
+    padding: 15px 40px;
 
+    background: linear-gradient(
+        90deg,
+        #0d1b4c,
+        #1a2d7c
+    );
 }
 
 .logo img {
@@ -27,8 +32,8 @@ header {
 .search {
     display: flex;
     align-items: center;
-    background-color: white;
-    border-radius: 4px;
+    background-color: #ffffff;
+    border-radius: 6px;
     overflow: hidden;
     width: 100%;
     max-width: 500px;
@@ -53,25 +58,100 @@ header {
     justify-content: center;
 }
 
-
 .user-actions {
     display: flex;
-    gap: 30px; 
+    gap: 30px;
     align-items: center;
 }
 
-
 .user-actions a {
     display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    text-decoration: none;  
-    color: #FFFFFF !important; 
-    gap: 5px;               
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
 }
 
+.user-actions a:hover {
+    color: #6aa8ff;
+}
 
-.user-actions .icon, 
-.user-actions .cart-icon {
-    font-size: 22px; 
+nav {
+    background-color: #0b122e;
+    padding: 10px 40px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #cfd6ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #6aa8ff;
+}
+
+main {
+    padding: 40px;
+}
+
+.hero {
+    height: 320px;
+    border-radius: 16px;
+
+    background: linear-gradient(
+        135deg,
+        #1e2a6d,
+        #0b0f2a
+    );
+
+    margin-bottom: 60px;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.ofertas ul,
+.mais-vendidos ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+
+    list-style: none;
+}
+
+.ofertas article,
+.mais-vendidos article {
+    background: linear-gradient(
+        180deg,
+        #11173a,
+        #090c1f
+    );
+
+    border-radius: 14px;
+    padding: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+    margin-top: 80px;
+    padding: 30px 40px;
+
+    background-color: #05070f;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
