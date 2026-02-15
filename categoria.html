@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -19,110 +18,144 @@
 
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="./images/logo-loja-do-dev.png" alt="Logo Loja do Dev">
-        </div>
+<header>
 
-        <form class="search">
-            <input type="text" placeholder="O que você está procurando?">
-            <button type="submit">🔍</button>
-        </form>
+    <div class="logo">
+        <img src="./images/logo-loja-do-dev.png" alt="Logo Loja do Dev">
+    </div>
 
-        <div class="user-actions">
-            <a href="#" class="login">
-                <span>👤</span>
-                Minha Conta
-            </a>
+    <form class="search">
+        <input type="text" placeholder="O que você está procurando?">
+        <button type="submit">🔍</button>
+    </form>
 
-            <a href="#" class="favorites">
-                <span>❤️</span>
-                Favoritos
-            </a>
+    <div class="user-actions">
 
-            <a href="#" class="cart">
-                <span>🛒</span>
-                Carrinho
-            </a>
-        </div>
-    </header>
+        <a href="#" class="login">👤 Minha Conta</a>
 
-    <nav class="categorias">
-        <ul class="lista-categorias">
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Mais Vendidos</a></li>
-            <li><a href="#">Cadeiras</a></li>
-            <li><a href="#">Headset</a></li>
-            <li><a href="#">Microfone</a></li>
-            <li><a href="#">Mouse</a></li>
-            <li><a href="#">PC Gamer</a></li>
-            <li><a href="#">Teclados</a></li>
-            <li><a href="#">Video Game</a></li>
+        <a href="#" class="favorites">❤️ Favoritos</a>
+
+        <a href="#" class="cart">🛒 Carrinho</a>
+
+    </div>
+
+</header>
+
+<nav class="categorias">
+
+    <ul class="lista-categorias">
+
+        <li><a href="categorias.html?cat=ofertas">Ofertas</a></li>
+
+        <li><a href="categorias.html?cat=mais-vendidos">Mais Vendidos</a></li>
+
+        <li><a href="categorias.html?cat=cadeiras">Cadeiras</a></li>
+
+        <li><a href="categorias.html?cat=headset">Headset</a></li>
+
+        <li><a href="categorias.html?cat=microfone">Microfone</a></li>
+
+        <li><a href="categorias.html?cat=mouse">Mouse</a></li>
+
+        <li><a href="categorias.html?cat=pc-gamer">PC Gamer</a></li>
+
+        <li><a href="categorias.html?cat=teclado">Teclados</a></li>
+
+        <li><a href="categorias.html?cat=videogame">Video Game</a></li>
+
+    </ul>
+
+</nav>
+
+<main>
+
+    <section class="categoria-header">
+
+        <h1 id="categoria-nome">
+            Categoria
+        </h1>
+
+        <p>
+            Confira todos os produtos disponíveis
+        </p>
+
+    </section>
+
+    <section class="categoria-produtos">
+
+        <ul id="lista-produtos">
+
+            <li>
+
+                <article class="produto-card">
+
+                    <img src="./images/produtos/cadeiras/cadeira-verde.png" alt="Cadeira Gamer Verde">
+
+                    <h3>Cadeira Gamer Verde</h3>
+
+                    <p class="preco">R$ 1.599,00</p>
+
+                    <a href="produto.html?id=3" class="btn-detalhes">
+                        Ver detalhes
+                    </a>
+
+                </article>
+
+            </li>
+
+
+            <li>
+
+                <article class="produto-card">
+
+                    <img src="./images/produtos/cadeiras/cadeira-vermelha.png" alt="Cadeira Gamer Vermelha">
+
+                    <h3>Cadeira Gamer Vermelha</h3>
+
+                    <p class="preco">R$ 1.899,00</p>
+
+                    <a href="produto.html?id=4" class="btn-detalhes">
+                        Ver detalhes
+                    </a>
+
+                </article>
+
+            </li>
+
+
         </ul>
-    </nav>
 
-    <main>
+    </section>
 
-        <section class="categoria-header">
-            <h1>Cadeiras Gamer</h1>
-            <p>Confira todos os produtos disponíveis nesta categoria</p>
-        </section>
+</main>
 
-        <section class="categoria-produtos">
-            <ul>
 
-                <li>
-                    <article class="produto-card">
-                        <img src="./images/produto-exemplo.png" alt="Produto">
-                        <h3>Cadeira Gamer Azul</h3>
-                        <p class="preco">R$ 1.299,00</p>
-                        <a href="produto.html" class="btn-detalhes">Ver detalhes</a>
-                    </article>
-                </li>
+<footer>
 
-                <li>
-                    <article class="produto-card">
-                        <img src="./images/produto-exemplo.png" alt="Produto">
-                        <h3>Cadeira Gamer Verde</h3>
-                        <p class="preco">R$ 1.599,00</p>
-                        <a href="produto.html" class="btn-detalhes">Ver detalhes</a>
-                    </article>
-                </li>
+    <div class="footer-container">
 
-                <li>
-                    <article class="produto-card">
-                        <img src="./images/produto-exemplo.png" alt="Produto">
-                        <h3>Cadeira Gamer Vermelha</h3>
-                        <p class="preco">R$ 1.899,00</p>
-                        <a href="produto.html" class="btn-detalhes">Ver detalhes</a>
-                    </article>
-                </li>
+        <p class="footer-text">
+            Projeto desenvolvido por
+            <strong>Luana Letéia</strong> e
+            <strong>Hugo Batista</strong>
+        </p>
 
-            </ul>
-        </section>
+    </div>
 
-    </main>
+</footer>
 
-    <footer>
-        <div class="footer-container">
+<script>
 
-            <p class="footer-text">
-                Projeto desenvolvido por
-                <strong>Luana Letéia</strong> e
-                <strong>Hugo Batista</strong>
-            </p>
+    const params = new URLSearchParams(window.location.search);
+    const categoria = params.get("cat");
 
-            <div class="footer-social">
-                <a href="" target="_blank" aria-label="LinkedIn Luana Letéia">
-                    <img src="" alt="LinkedIn Luana Letéia">
-                </a>
+    const titulo = document.getElementById("categoria-nome");
 
-                <a href="" target="_blank" aria-label="LinkedIn Hugo Batista">
-                    <img src="" alt="LinkedIn Hugo Batista">
-                </a>
-            </div>
-    </footer>
+    if (categoria) {
+        titulo.textContent = categoria.replace("-", " ").toUpperCase();
+    }
+
+</script>
 
 </body>
-
 </html>
