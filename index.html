@@ -7,104 +7,155 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 
-    <title>Loja do Dev – Consoles, PCs, Acessórios e Ofertas Imperdíveis</title>
+    <title>Loja do Dev – Produtos Gamer</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="./images/logo-loja-do-dev.png" alt="imagen-logo">
-        </div>
 
-        <form class="search">
-            <input type="text" placeholder="O que você está procurando">
-            <button type="submit">🔍</button>
-        </form>
+<header>
 
-        <div class="user-actions">
+    <div class="logo">
+        <img src="./images/logo-loja-do-dev.png" alt="Logo Loja do Dev">
+    </div>
 
-            <a href="#" class="login">
-                <span class="Icon-Registration">👤</span>
-                Minha Conta
-            </a>
+    <form class="search">
+        <input type="text" placeholder="O que você está procurando?">
+        <button type="submit">🔍</button>
+    </form>
 
-            <a href="#" class="favorites">
-                <span class="Icon-favorites">❤️</span>
-                Favoritos
-            </a>
+    <div class="user-actions">
 
-            <a href="#" class="cart" aria-label="Carrinho de compras">
-                <span class="cart-count" aria-live="polite">🛒</span>
-                Carrinho de Compras
-            </a>
+        <a href="#" class="login">
+            👤
+            Minha Conta
+        </a>
 
-        </div>
-    </header>
+        <a href="#" class="favorites">
+            ❤️
+            Favoritos
+        </a>
 
-    <nav class="categorias">
-        <ul class="lista-categorias">
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Mais Vendidos</a></li>
-            <li><a href="#">Cadeiras</a></li>
-            <li><a href="#">Headset</a></li>
-            <li><a href="#">Microfone</a></li>
-            <li><a href="#">Mouse</a></li>
-            <li><a href="#">PC Gamer</a></li>
-            <li><a href="#">Teclados</a></li>
-            <li><a href="#">Video Game</a></li>
+        <a href="#" class="cart">
+            🛒
+            Carrinho
+        </a>
+
+    </div>
+
+</header>
+
+
+<nav class="categorias">
+
+    <ul class="lista-categorias">
+
+        <li><a href="categorias.html?cat=ofertas">Ofertas</a></li>
+
+        <li><a href="categorias.html?cat=mais-vendidos">Mais Vendidos</a></li>
+
+        <li><a href="categorias.html?cat=cadeiras">Cadeiras</a></li>
+
+        <li><a href="categorias.html?cat=headset">Headset</a></li>
+
+        <li><a href="categorias.html?cat=microfone">Microfone</a></li>
+
+        <li><a href="categorias.html?cat=mouse">Mouse</a></li>
+
+        <li><a href="categorias.html?cat=pc-gamer">PC Gamer</a></li>
+
+        <li><a href="categorias.html?cat=teclado">Teclados</a></li>
+
+        <li><a href="categorias.html?cat=videogame">Video Game</a></li>
+
+    </ul>
+
+</nav>
+
+
+<main>
+
+    <section class="hero"></section>
+
+
+    <!-- OFERTAS -->
+
+    <section class="ofertas">
+
+        <h2>Ofertas</h2>
+
+        <ul>
+
+            <li>
+                <article>
+
+                    <img src="./images/produtos/cadeiras/cadeira-azul.png" alt="Cadeira Gamer Azul">
+
+                    <h3>Cadeira Gamer Azul</h3>
+
+                    <p>R$ 1.299,00</p>
+
+                    <a href="produto.html?id=1" class="btn-detalhes">
+                        Ver produto
+                    </a>
+
+                </article>
+            </li>
+
         </ul>
-    </nav>
 
-    <main>
-        <section class="hero"></section>
+    </section>
 
-        <section class="ofertas">
-            <h2>Ofertas</h2>
-            <ul>
-                <li>
-                    <article></article>
-                </li>
-            </ul>
-        </section>
 
-        <section class="mais-vendidos">
-            <h2>Mais Vendidos</h2>
-            <ul>
-                <li>
-                    <article></article>
-                </li>
-            </ul>
-        </section>
-    </main>
+    <!-- MAIS VENDIDOS -->
 
-    <footer>
-        <div class="footer-container">
+    <section class="mais-vendidos">
 
-            <p class="footer-text">
-                Projeto desenvolvido por
-                <strong>Luana Letéia</strong> e
-                <strong>Hugo Batista</strong>
-            </p>
+        <h2>Mais Vendidos</h2>
 
-            <div class="footer-social">
-                <a href="" target="_blank" aria-label="LinkedIn Luana Letéia">
-                    <img src="" alt="LinkedIn Luana Letéia">
-                </a>
+        <ul>
 
-                <a href="" target="_blank" aria-label="LinkedIn Hugo Batista">
-                    <img src="" alt="LinkedIn Hugo Batista">
-                </a>
-            </div>
+            <li>
+                <article>
 
-        </div>
-    </footer>
+                    <img src="./images/produtos/headset/headset-preto.png" alt="Headset Gamer Pro">
+
+                    <h3>Headset Gamer Pro</h3>
+
+                    <p>R$ 499,00</p>
+
+                    <a href="produto.html?id=2" class="btn-detalhes">
+                        Ver produto
+                    </a>
+
+                </article>
+            </li>
+
+        </ul>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-container">
+
+        <p class="footer-text">
+            Projeto desenvolvido por
+            <strong>Luana Letéia</strong> e
+            <strong>Hugo Batista</strong>
+        </p>
+
+    </div>
+
+</footer>
 
 </body>
-
 </html>
