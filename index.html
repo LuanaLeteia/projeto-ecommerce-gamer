@@ -18,128 +18,142 @@
 
 <body>
 
-    <header>
+<header>
 
-        <div class="logo">
-            <img src="./images/logo-loja-do-dev.png" alt="Logo Loja do Dev">
+    <div class="logo">
+        <img src="./images/logo-loja-do-dev.png" alt="Logo Loja do Dev">
+    </div>
+
+    <form class="search">
+        <input type="text" placeholder="O que você está procurando?">
+        <button type="submit">🔍</button>
+    </form>
+
+    <div class="user-actions">
+
+        <a href="#" class="login">
+            👤
+            Minha Conta
+        </a>
+
+        <a href="#" class="favorites">
+            ❤️
+            Favoritos
+        </a>
+
+        <a href="#" class="cart">
+            🛒
+            Carrinho
+        </a>
+
+    </div>
+
+</header>
+
+
+<nav class="categorias">
+
+    <ul class="lista-categorias">
+
+        <li><a href="categorias.html?cat=cadeiras">Cadeiras</a></li>
+        <li><a href="categorias.html?cat=headset">Headset</a></li>
+        <li><a href="categorias.html?cat=microfone">Microfone</a></li>
+        <li><a href="categorias.html?cat=mouse">Mouse</a></li>
+        <li><a href="categorias.html?cat=pc-gamer">PC Gamer</a></li>
+        <li><a href="categorias.html?cat=teclado">Teclados</a></li>
+        <li><a href="categorias.html?cat=videogame">Video Game</a></li>
+
+    </ul>
+
+</nav>
+
+<main>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Monte seu Setup Gamer Perfeito</h1>
+
+            <p>
+                🚀 Evolua seu jogo com equipamentos de alto nível.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#ofertas" class="btn-hero primary">
+                    Todos os Produtos
+                </a>
+
+                <a href="categorias.html?cat=cadeiras" class="btn-hero secondary">
+                    Fale Conosco
+                </a>
+
+            </div>
+
         </div>
 
-        <form class="search">
-            <input type="text" placeholder="O que você está procurando?">
-            <button type="submit">🔍</button>
-        </form>
+    </section>
 
-        <div class="user-actions">
+    <section class="ofertas" id="ofertas">
 
-            <a href="#" class="login">
-                👤
-                Minha Conta
-            </a>
+        <h2>Ofertas</h2>
 
-            <a href="#" class="favorites">
-                ❤️
-                Favoritos
-            </a>
+        <ul>
 
-            <a href="#" class="cart">
-                🛒
-                Carrinho
-            </a>
+            <li>
 
-        </div>
+                <article class="produto-card">
 
-    </header>
+                    <img src="./images/produtos/cadeiras/cadeira-azul.png" alt="Cadeira Gamer Azul">
 
+                    <h3>Cadeira Gamer Azul</h3>
 
-    <nav class="categorias">
+                    <p class="preco">R$ 1.299,00</p>
 
-        <ul class="lista-categorias">
+                    <a href="produto.html?id=1" class="btn-detalhes">
+                        Ver produto
+                    </a>
 
-            <li><a href="categorias.html?cat=cadeiras">Cadeiras</a></li>
+                </article>
 
-            <li><a href="categorias.html?cat=headset">Headset</a></li>
-
-            <li><a href="categorias.html?cat=microfone">Microfone</a></li>
-
-            <li><a href="categorias.html?cat=mouse">Mouse</a></li>
-
-            <li><a href="categorias.html?cat=pc-gamer">PC Gamer</a></li>
-
-            <li><a href="categorias.html?cat=teclado">Teclados</a></li>
-
-            <li><a href="categorias.html?cat=videogame">Video Game</a></li>
+            </li>
 
         </ul>
 
-    </nav>
+    </section>
 
+    <section class="mais-vendidos">
 
-    <main>
+        <h2>Mais Vendidos</h2>
 
-        <section class="hero"></section>
+        <ul>
 
+            <li>
 
-        <!-- OFERTAS -->
+                <article class="produto-card">
 
-        <section class="ofertas">
+                    <img src="./images/produtos/headset/headset-preto.png" alt="Headset Gamer Pro">
 
-            <h2>Ofertas</h2>
+                    <h3>Headset Gamer Pro</h3>
 
-            <ul>
+                    <p class="preco">R$ 499,00</p>
 
-                <li>
-                    <article>
+                    <a href="produto.html?id=2" class="btn-detalhes">
+                        Ver produto
+                    </a>
 
-                        <img src="./images/produtos/cadeiras/cadeira-azul.png" alt="Cadeira Gamer Azul">
+                </article>
 
-                        <h3>Cadeira Gamer Azul</h3>
+            </li>
 
-                        <p>R$ 1.299,00</p>
+        </ul>
 
-                        <a href="produto.html?id=1" class="btn-detalhes">
-                            Ver produto
-                        </a>
+    </section>
 
-                    </article>
-                </li>
+</main>
 
-            </ul>
-
-        </section>
-
-
-        <!-- MAIS VENDIDOS -->
-
-        <section class="mais-vendidos">
-
-            <h2>Mais Vendidos</h2>
-
-            <ul>
-
-                <li>
-                    <article>
-
-                        <img src="./images/produtos/headset/headset-preto.png" alt="Headset Gamer Pro">
-
-                        <h3>Headset Gamer Pro</h3>
-
-                        <p>R$ 499,00</p>
-
-                        <a href="produto.html?id=2" class="btn-detalhes">
-                            Ver produto
-                        </a>
-
-                    </article>
-                </li>
-
-            </ul>
-
-        </section>
-
-    </main>
-
-
-    <footer>
+<footer>
 
     <div class="footer-container">
 
@@ -151,18 +165,18 @@
 
             <div class="footer-devs">
 
-                <!-- Luana -->
                 <a href="https://www.linkedin.com/in/luanaleteia"
-                   target="_blank" class="footer-link">
+                   target="_blank"
+                   class="footer-link">
 
                     <img src="./images/linkedin-icon.svg" alt="LinkedIn Luana Letéia">
                     <span>Luana Letéia</span>
 
                 </a>
 
-                <!-- Hugo -->
                 <a href="https://www.linkedin.com/in/hugo-batista89"
-                   target="_blank" class="footer-link">
+                   target="_blank"
+                   class="footer-link">
 
                     <img src="./images/linkedin-icon.svg" alt="LinkedIn Hugo Batista">
                     <span>Hugo Batista</span>
@@ -182,5 +196,4 @@
 </footer>
 
 </body>
-
 </html>

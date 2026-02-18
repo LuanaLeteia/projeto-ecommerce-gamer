@@ -1,18 +1,19 @@
 body {
     min-height: 100vh;
+
     background: radial-gradient(
         circle at top,
         #1a1f3c 0%,
         #0b0f1f 45%,
         #05070f 100%
     );
+
     color: #ffffff;
     font-family: "Roboto", sans-serif;
 
     display: flex;
     flex-direction: column;
 }
-
 
 header {
     display: flex;
@@ -32,13 +33,13 @@ header {
     height: 110px;
 }
 
-
 .search {
     display: flex;
     align-items: center;
 
     background-color: #ffffff;
     border-radius: 6px;
+
     overflow: hidden;
 
     width: 100%;
@@ -65,7 +66,6 @@ header {
     font-size: 18px;
 }
 
-
 .user-actions {
     display: flex;
     gap: 30px;
@@ -89,7 +89,6 @@ header {
 .user-actions a:hover {
     color: #6aa8ff;
 }
-
 
 .categorias {
     display: flex;
@@ -124,7 +123,6 @@ header {
     color: #6aa8ff;
 }
 
-
 main {
     flex: 1;
     padding: 40px;
@@ -142,13 +140,76 @@ main {
     );
 
     margin-bottom: 60px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 50px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #cfd6ff;
+
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-hero {
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: all 0.2s ease;
+}
+
+.btn-hero.primary {
+    background: linear-gradient(
+        90deg,
+        #2745b8,
+        #1a2d7c
+    );
+
+    color: #ffffff;
+}
+
+.btn-hero.primary:hover {
+    transform: scale(1.05);
+}
+
+.btn-hero.secondary {
+    border: 1px solid #6aa8ff;
+    color: #6aa8ff;
+}
+
+.btn-hero.secondary:hover {
+    background: rgba(106,168,255,0.1);
 }
 
 section h2 {
     margin-bottom: 25px;
     font-size: 22px;
 }
-
 
 .ofertas ul,
 .mais-vendidos ul,
@@ -161,11 +222,7 @@ section h2 {
     list-style: none;
 }
 
-
-.ofertas article,
-.mais-vendidos article,
 .produto-card {
-
     background: linear-gradient(
         180deg,
         #11173a,
@@ -184,30 +241,20 @@ section h2 {
                 box-shadow 0.3s ease;
 }
 
-.ofertas article:hover,
-.mais-vendidos article:hover,
 .produto-card:hover {
-
     transform: translateY(-6px);
 
     box-shadow: 0 15px 40px rgba(0,0,0,0.8);
 }
 
-
-.ofertas article img,
-.mais-vendidos article img,
 .produto-card img {
-
     width: 100%;
-    height: 180px;
+    height: 160px;
 
     object-fit: contain;
 
-    display: block;
-
-    margin: 0 auto 15px;
+    margin-bottom: 15px;
 }
-
 
 .produto-card h3 {
     font-size: 16px;
@@ -222,7 +269,6 @@ section h2 {
 
     margin-bottom: 12px;
 }
-
 
 .btn-detalhes {
     display: inline-block;
@@ -256,7 +302,6 @@ section h2 {
 
     transform: scale(1.05);
 }
-
 
 footer {
     background: linear-gradient(
@@ -297,7 +342,6 @@ footer {
     display: flex;
     gap: 25px;
 }
-
 
 .footer-link {
     display: flex;
