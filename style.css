@@ -15,6 +15,7 @@ body {
     flex-direction: column;
 }
 
+
 header {
     display: flex;
     align-items: center;
@@ -90,6 +91,7 @@ header {
     color: #6aa8ff;
 }
 
+
 .categorias {
     display: flex;
     justify-content: center;
@@ -123,13 +125,15 @@ header {
     color: #6aa8ff;
 }
 
+
 main {
     flex: 1;
     padding: 40px;
 }
 
+
 .hero {
-    height: 320px;
+    min-height: 360px;
 
     border-radius: 16px;
 
@@ -142,45 +146,81 @@ main {
     margin-bottom: 60px;
 
     display: flex;
+    justify-content: center;
     align-items: center;
 
-    padding: 50px;
+    padding: 60px 40px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 40%;
+    height: 100%;
+
+    background: linear-gradient(
+        to left,
+        rgba(255,255,255,0.08),
+        transparent
+    );
 }
 
 .hero-content {
-    max-width: 500px;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content h1 {
-    font-size: 36px;
-    margin-bottom: 15px;
+    font-size: 42px;
+    font-weight: 700;
 
     line-height: 1.2;
+
+    letter-spacing: -0.5px;
 }
 
 .hero-content p {
-    font-size: 16px;
-    color: #cfd6ff;
+    font-size: 17px;
+    color: #d6ddff;
 
-    margin-bottom: 25px;
+    max-width: 90%;
+
+    line-height: 1.5;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 15px;
+    gap: 18px;
+
+    margin-top: 10px;
 }
 
 .btn-hero {
-    padding: 12px 22px;
+    padding: 13px 26px;
 
-    border-radius: 8px;
+    border-radius: 10px;
 
     text-decoration: none;
 
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
 
-    transition: all 0.2s ease;
+    letter-spacing: 0.3px;
+
+    transition: all 0.25s ease;
 }
 
 .btn-hero.primary {
@@ -194,7 +234,7 @@ main {
 }
 
 .btn-hero.primary:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 .btn-hero.secondary {
@@ -203,13 +243,15 @@ main {
 }
 
 .btn-hero.secondary:hover {
-    background: rgba(106,168,255,0.1);
+    background: rgba(106,168,255,0.12);
 }
+
 
 section h2 {
     margin-bottom: 25px;
     font-size: 22px;
 }
+
 
 .ofertas ul,
 .mais-vendidos ul,
@@ -302,6 +344,7 @@ section h2 {
 
     transform: scale(1.05);
 }
+
 
 footer {
     background: linear-gradient(
