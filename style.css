@@ -11,10 +11,16 @@ body {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
 
+    letter-spacing: 0.5px; /* Espaçamento global */
+
     display: flex;
     flex-direction: column;
 }
 
+
+/* =========================
+   HEADER
+========================= */
 
 header {
     display: flex;
@@ -33,6 +39,11 @@ header {
 .logo img {
     height: 110px;
 }
+
+
+/* =========================
+   BUSCA
+========================= */
 
 .search {
     display: flex;
@@ -53,7 +64,8 @@ header {
     border: none;
     padding: 10px 15px;
 
-    font-size: 14px;
+    font-size: 15px;
+
     outline: none;
 }
 
@@ -67,9 +79,14 @@ header {
     font-size: 18px;
 }
 
+
+/* =========================
+   AÇÕES DO USUÁRIO
+========================= */
+
 .user-actions {
     display: flex;
-    gap: 30px;
+    gap: 32px;
 }
 
 .user-actions a {
@@ -77,12 +94,14 @@ header {
     flex-direction: column;
     align-items: center;
 
-    gap: 4px;
+    gap: 5px;
 
     text-decoration: none;
     color: #ffffff;
 
-    font-size: 13px;
+    font-size: 14.5px; /* AUMENTADO */
+
+    letter-spacing: 0.8px;
 
     transition: color 0.2s ease;
 }
@@ -92,66 +111,32 @@ header {
 }
 
 
+/* =========================
+   MENU DE CATEGORIAS
+========================= */
+
 .categorias {
     display: flex;
     justify-content: center;
 
     background-color: #0b122e;
 
-    padding: 12px 40px;
+    padding: 14px 40px;
 
     border-top: 1px solid rgba(255,255,255,0.05);
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
-.categoria-header {
-    margin-bottom: 50px;
-}
-
-.categoria-header h1 {
-    font-size: 32px;
-    margin-bottom: 8px;
-}
-
-.categoria-header p {
-    color: #cfd6ff;
-    font-size: 15px;
-}
-
-.categoria-produtos {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-}
-
-.categoria-bloco h2 {
-    margin-bottom: 25px;
-    font-size: 24px;
-
-    color: #6aa8ff;
-}
-
-.lista-produtos {
-    list-style: none;
-
-    display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-
-    gap: 30px;
-
-    padding: 0;
-    margin: 0;
-}
-
 .lista-categorias {
     display: flex;
-    gap: 30px;
+    gap: 34px;
 
     list-style: none;
 
-    font-size: 15px;
+    font-size: 16px; /* AUMENTADO */
     font-weight: 500;
+
+    letter-spacing: 1px;
 }
 
 .lista-categorias a {
@@ -166,14 +151,22 @@ header {
 }
 
 
+/* =========================
+   MAIN
+========================= */
+
 main {
     flex: 1;
     padding: 40px;
 }
 
 
+/* =========================
+   HERO
+========================= */
+
 .hero {
-    min-height: 360px;
+    min-height: 380px;
 
     border-radius: 20px;
 
@@ -185,7 +178,7 @@ main {
 
     margin-bottom: 60px;
 
-    padding: 50px;
+    padding: 55px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -201,23 +194,32 @@ main {
 }
 
 .hero-text h1 {
-    font-size: 38px;
-    margin-bottom: 18px;
+    font-size: 42px; /* AUMENTADO */
+    margin-bottom: 20px;
 
     line-height: 1.2;
+
+    letter-spacing: 1.2px;
 }
 
 .hero-text p {
-    font-size: 17px;
+    font-size: 18px; /* AUMENTADO */
     color: #cfd6ff;
 
-    margin-bottom: 28px;
+    margin-bottom: 30px;
+
+    letter-spacing: 0.8px;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 16px;
+    gap: 18px;
 }
+
+
+/* =========================
+   IMAGEM HERO
+========================= */
 
 .hero-image {
     display: flex;
@@ -227,7 +229,7 @@ main {
 
 .hero-image img {
     width: 100%;
-    max-width: 420px;
+    max-width: 430px;
 
     object-fit: contain;
 
@@ -235,15 +237,21 @@ main {
 }
 
 
+/* =========================
+   BOTÕES HERO
+========================= */
+
 .btn-hero {
-    padding: 13px 24px;
+    padding: 13px 26px;
 
     border-radius: 10px;
 
     text-decoration: none;
 
-    font-size: 14px;
+    font-size: 14.5px;
     font-weight: 500;
+
+    letter-spacing: 0.8px;
 
     transition: all 0.2s ease;
 }
@@ -272,10 +280,22 @@ main {
 }
 
 
+/* =========================
+   SEÇÕES
+========================= */
+
 section h2 {
     margin-bottom: 25px;
-    font-size: 22px;
+
+    font-size: 24px; /* AUMENTADO */
+
+    letter-spacing: 1px;
 }
+
+
+/* =========================
+   GRID PRODUTOS HOME
+========================= */
 
 .ofertas ul,
 .mais-vendidos ul {
@@ -287,6 +307,11 @@ section h2 {
     list-style: none;
 }
 
+
+/* =========================
+   CARD PRODUTO
+========================= */
+
 .produto-card {
     background: linear-gradient(
         180deg,
@@ -296,7 +321,7 @@ section h2 {
 
     border-radius: 16px;
 
-    padding: 20px;
+    padding: 22px;
 
     text-align: center;
 
@@ -323,6 +348,8 @@ section h2 {
 .produto-card h3 {
     font-size: 16px;
     margin-bottom: 8px;
+
+    letter-spacing: 0.6px;
 }
 
 .produto-card .preco {
@@ -332,12 +359,19 @@ section h2 {
     color: #6aa8ff;
 
     margin-bottom: 12px;
+
+    letter-spacing: 0.8px;
 }
+
+
+/* =========================
+   BOTÃO PRODUTO
+========================= */
 
 .btn-detalhes {
     display: inline-block;
 
-    padding: 10px 18px;
+    padding: 10px 20px;
 
     border-radius: 8px;
 
@@ -353,6 +387,8 @@ section h2 {
     font-size: 14px;
     font-weight: 500;
 
+    letter-spacing: 0.7px;
+
     transition: all 0.2s ease;
 }
 
@@ -360,6 +396,64 @@ section h2 {
     transform: scale(1.05);
 }
 
+
+/* =========================
+   CATEGORIA
+========================= */
+
+.categoria-header {
+    margin-bottom: 50px;
+}
+
+.categoria-header h1 {
+    font-size: 36px; /* AUMENTADO */
+
+    margin-bottom: 10px;
+
+    letter-spacing: 1.5px;
+}
+
+.categoria-header p {
+    color: #cfd6ff;
+
+    font-size: 16px; /* AUMENTADO */
+
+    letter-spacing: 0.8px;
+}
+
+.categoria-produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.categoria-bloco h2 {
+    margin-bottom: 25px;
+
+    font-size: 26px; /* AUMENTADO */
+
+    color: #6aa8ff;
+
+    letter-spacing: 1.2px;
+}
+
+.lista-produtos {
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 30px;
+
+    padding: 0;
+    margin: 0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background: linear-gradient(
@@ -393,7 +487,10 @@ footer {
 
 .footer-text {
     font-size: 15px;
+
     color: #cfd6ff;
+
+    letter-spacing: 0.8px;
 }
 
 .footer-devs {
@@ -411,6 +508,8 @@ footer {
 
     font-size: 14px;
     font-weight: 500;
+
+    letter-spacing: 0.6px;
 
     transition: all 0.2s ease;
 }
@@ -430,9 +529,11 @@ footer {
 
 .footer-copy {
     font-size: 12px;
+
     color: #8f98c7;
 
     margin-top: 6px;
-}
 
+    letter-spacing: 0.6px;
+}
 
