@@ -11,16 +11,12 @@ body {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
 
-    letter-spacing: 0.5px; /* Espaçamento global */
+    letter-spacing: 0.5px;
 
     display: flex;
     flex-direction: column;
 }
 
-
-/* =========================
-   HEADER
-========================= */
 
 header {
     display: flex;
@@ -40,10 +36,6 @@ header {
     height: 110px;
 }
 
-
-/* =========================
-   BUSCA
-========================= */
 
 .search {
     display: flex;
@@ -80,10 +72,6 @@ header {
 }
 
 
-/* =========================
-   AÇÕES DO USUÁRIO
-========================= */
-
 .user-actions {
     display: flex;
     gap: 32px;
@@ -99,7 +87,7 @@ header {
     text-decoration: none;
     color: #ffffff;
 
-    font-size: 14.5px; /* AUMENTADO */
+    font-size: 14.5px;
 
     letter-spacing: 0.8px;
 
@@ -110,10 +98,6 @@ header {
     color: #6aa8ff;
 }
 
-
-/* =========================
-   MENU DE CATEGORIAS
-========================= */
 
 .categorias {
     display: flex;
@@ -133,7 +117,7 @@ header {
 
     list-style: none;
 
-    font-size: 16px; /* AUMENTADO */
+    font-size: 16px;
     font-weight: 500;
 
     letter-spacing: 1px;
@@ -151,19 +135,11 @@ header {
 }
 
 
-/* =========================
-   MAIN
-========================= */
-
 main {
     flex: 1;
     padding: 40px;
 }
 
-
-/* =========================
-   HERO
-========================= */
 
 .hero {
     min-height: 380px;
@@ -194,7 +170,7 @@ main {
 }
 
 .hero-text h1 {
-    font-size: 42px; /* AUMENTADO */
+    font-size: 42px;
     margin-bottom: 20px;
 
     line-height: 1.2;
@@ -203,7 +179,7 @@ main {
 }
 
 .hero-text p {
-    font-size: 18px; /* AUMENTADO */
+    font-size: 18px;
     color: #cfd6ff;
 
     margin-bottom: 30px;
@@ -216,10 +192,6 @@ main {
     gap: 18px;
 }
 
-
-/* =========================
-   IMAGEM HERO
-========================= */
 
 .hero-image {
     display: flex;
@@ -236,10 +208,6 @@ main {
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6));
 }
 
-
-/* =========================
-   BOTÕES HERO
-========================= */
 
 .btn-hero {
     padding: 13px 26px;
@@ -280,22 +248,14 @@ main {
 }
 
 
-/* =========================
-   SEÇÕES
-========================= */
-
 section h2 {
     margin-bottom: 25px;
 
-    font-size: 24px; /* AUMENTADO */
+    font-size: 24px;
 
     letter-spacing: 1px;
 }
 
-
-/* =========================
-   GRID PRODUTOS HOME
-========================= */
 
 .ofertas ul,
 .mais-vendidos ul {
@@ -307,10 +267,6 @@ section h2 {
     list-style: none;
 }
 
-
-/* =========================
-   CARD PRODUTO
-========================= */
 
 .produto-card {
     background: linear-gradient(
@@ -364,10 +320,6 @@ section h2 {
 }
 
 
-/* =========================
-   BOTÃO PRODUTO
-========================= */
-
 .btn-detalhes {
     display: inline-block;
 
@@ -397,16 +349,12 @@ section h2 {
 }
 
 
-/* =========================
-   CATEGORIA
-========================= */
-
 .categoria-header {
     margin-bottom: 50px;
 }
 
 .categoria-header h1 {
-    font-size: 36px; /* AUMENTADO */
+    font-size: 36px;
 
     margin-bottom: 10px;
 
@@ -416,7 +364,7 @@ section h2 {
 .categoria-header p {
     color: #cfd6ff;
 
-    font-size: 16px; /* AUMENTADO */
+    font-size: 16px;
 
     letter-spacing: 0.8px;
 }
@@ -430,7 +378,7 @@ section h2 {
 .categoria-bloco h2 {
     margin-bottom: 25px;
 
-    font-size: 26px; /* AUMENTADO */
+    font-size: 26px;
 
     color: #6aa8ff;
 
@@ -450,10 +398,6 @@ section h2 {
     margin: 0;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
 
 footer {
     background: linear-gradient(
