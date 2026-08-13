@@ -1,3 +1,13 @@
-# Página em Construção 🚧
+# 🛒 E-commerce Gamer
 
-Este projeto representa uma **página de e-commerce em desenvolvimento**, criada com foco em **estrutura semântica, layout moderno e boas práticas de front-end**.
+E-commerce fictício de uma loja para Gamers desenvolvido como projeto de estudo de HTML e CSS. 
+
+
+## 🚀 Tecnologias utilizadas
+- HTML  
+- CSS  
+
+
+## 📱 Responsividade
+- Mobile
+- Desktop
